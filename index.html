@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конвертер цветов</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex">
+    <div class="overlay flex">
+      <div class="container">
+        <h1>Конвертер цветов</h1>
+        <h2>RGB в HEX:</h2>
+        <div class="flex converter">
+          <div>
+            <div>
+              <span>R</span>
+              <input type="number" min="0" max="255" id="r" />
+            </div>
+            <div>
+              <span>G</span>
+              <input type="number" min="0" max="255" id="g" />
+            </div>
+            <div>
+              <span>B</span>
+              <input type="number" min="0" max="255" id="b" />
+            </div>
+          </div>
+          <img src="arrow.png" class="arrow" id="rgb-arrow" />
+          <div class="result-area flex">
+            <span class="result-title">Результат:</span>
+            <div class="flex">
+              <span id="hex-result-color"></span>
+              &nbsp;
+              <span id="hex-result" class="flex"></span>
+            </div>
+          </div>
+        </div>
+        <h2>HEX в RGB:</h2>
+        <div class="flex converter">
+          <div>
+            <div>
+              <span>HEX #</span>
+              <input type="text" id="hex" />
+            </div>
+          </div>
+          <img src="arrow.png" class="arrow" id="hex-arrow" />
+          <div class="result-area flex">
+            <div>Результат:</div>
+            <div class="flex">
+              <span id="rgb-result-color"></span>
+              &nbsp;
+              <span id="rgb-result" class="flex"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
